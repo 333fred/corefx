@@ -93,7 +93,7 @@
     <ProjectAssetsFile Condition="'$(ProjectAssetsFile)' == 'unused'"></ProjectAssetsFile>
     <ExcludeRestorePackageImports>$(_excludeRestorePackageImports)</ExcludeRestorePackageImports>
     <!-- always set $(ConfigurationGroup) even if it wasn't passed in, Configuration is treated as local so this will update even if specified globally -->
-    <Configuration Condition="!$(_parse_Configuration.Contains('-$(ConfigurationGroup)-'))">$(Configuration)-$(ConfigurationGroup)</Configuration>
+    <!-- <Configuration Condition="!$(_parse_Configuration.Contains('-$(ConfigurationGroup)-'))">$(Configuration)-$(ConfigurationGroup)</Configuration> -->
   </PropertyGroup>
 
   <!-- Common repo directories -->
